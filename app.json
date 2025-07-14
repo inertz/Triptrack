@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "TripTrack",
+    "slug": "triptrack",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#007AFF"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.triptrack.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#007AFF"
+      },
+      "package": "com.triptrack.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#007AFF"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow TripTrack to access your photos to attach them to activities.",
+          "savePhotosPermission": "Allow TripTrack to save photos to your photo library."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow TripTrack to access your photos to attach them to activities.",
+          "cameraPermission": "Allow TripTrack to access your camera to take photos for activities."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
